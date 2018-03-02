@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="краткое описание">
+    <meta name="keywords" content="разные, ключевые, слова">
+    <link rel="shortcut icon" href="#" />
+
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>Web popup</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup__header">
+            <button class="popup__close">X</button>
+            <div class="popup__header-text">
+                Log in to the Site
+            </div>
+        </div>
+        <div class="popup__body">
+            <div class="col-1-of-2 bordered">
+                <button class="button button--fb">Log in with Facebook</button>
+                <button class="button button--gp">Log in with Google +</button>
+            </div>
+            <div class="col-1-of-2">
+                <form action="#">
+                    <div class="form-field  form-field--error">
+                        <label for="login">Login</label>
+                        <input type="email" name="login" id="login">
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-field">
+                        <label class="checkbox" for="remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <span class="checkbox__theme"></span>
+                            Remember me
+                        </label>
+
+                    </div>
+                    <div class="form-field">
+                        <button class="button">Log in</button>
+                        <a href="#">Need help logging in?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup__footer">
+            Dont have an account yet?
+            <a href="#">Sign up</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
