@@ -1,0 +1,31 @@
+/* font-family: "Name"; */
+
+@font-face {
+    font-family: 'font5b192644351be961ae2e09ff396c938c';
+    src: url('https://nomail.com.ua/files/eot/5b192644351be961ae2e09ff396c938c.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/5b192644351be961ae2e09ff396c938c.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/5b192644351be961ae2e09ff396c938c.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SusaLight';
+    src: local('SusaLight'), url('https://nomail.com.ua/files/woff/5b192644351be961ae2e09ff396c938c.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'OptimaLTStd';
+    src: url(../fonts/OptimaLTStd-XBlackItalic.otf);
+}
+
+
+@font-face {
+    font-family: 'font1bf71be111189e76987a4bb9b3115cb7';
+    src: url('https://nomail.com.ua/files/eot/1bf71be111189e76987a4bb9b3115cb7.eot?#iefix') format('embedded-opentype'),
+    url('https://nomail.com.ua/files/woff/1bf71be111189e76987a4bb9b3115cb7.woff') format('woff'),
+    url('https://nomail.com.ua/files/woff2/1bf71be111189e76987a4bb9b3115cb7.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: local('OpenSans-Light'), url('https://nomail.com.ua/files/woff/1bf71be111189e76987a4bb9b3115cb7.woff') format('woff');
+}
