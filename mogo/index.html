@@ -1,780 +1,269 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="краткое описание">
-    <meta name="keywords" content="разные, ключевые, слова">
-    <link rel="shortcut icon" href="" />
-
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
-    
-    <script type="text/javascript">
-        var counter;
 
-        function next(arr) {
-            var max = arr.length - 1,
-                i = 0;
-            return function() {
-                i = i < max ? i + 1 : 0;
-                return arr[i];
-            };
-        }
+    <link rel="stylesheet" href="./css/main.css">
 
-        function work() {
-            setTimeout(function() {
-                counter().checked = true;
-                work();
-            }, 5000);
-        }
-
-        window.onload = function() {
-            var els = document.querySelectorAll('.fullscreen-slider>input');
-            counter = next(els);
-            work();
-        };
-
-    </script>
-
-
-    <title>MoGo</title>
+    <title>MOGO</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-menu">
-                <a class="logo" href="#">MoGo</a>
-                <input type="checkbox" class="nav-burger__checkbox" id="burger">
-                <label for="burger" class="nav-burger">mobile-menu</label>
+    <!-- STORY ABOUT US -->
+    <section class="story container">
+        <h2 class="section-title">
+            <span class="section-subtitle">What we do</span>
+            Story about us
+        </h2>
+        <p class="section__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="gallery">
+            <div class="gallery__element">
+                <a href="#" class="gallery__overlay">
+                    <img src="./img/img-1.jpg" alt="">
 
-                <nav class="header-nav">
-                    <a class="header-nav__link header-nav__link--active" href="#">about</a>
-                    <a class="header-nav__link" href="#">service</a>
-                    <a class="header-nav__link" href="#">work</a>
-                    <a class="header-nav__link" href="#">blog</a>
-                    <a class="header-nav__link" href="#">contact</a>
-                    <a class="header-nav__link--svg" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="15px">
-                        <path fill-rule="evenodd"
-                         d="M17.726,3.663 L17.727,3.663 L15.252,9.163 L15.252,9.163 C15.130,9.434 14.866,9.628 14.555,9.648 L14.555,9.648 L7.427,10.123 L7.839,11.299 L15.600,11.299 C16.511,11.299 17.250,12.039 17.250,12.950 C17.250,13.861 16.511,14.600 15.600,14.600 C14.689,14.600 13.950,13.861 13.950,12.950 L6.250,12.950 C6.250,13.861 5.511,14.600 4.600,14.600 C3.689,14.600 2.950,13.861 2.950,12.950 C2.950,12.039 3.689,11.299 4.600,11.299 L6.091,11.299 L2.915,2.225 L1.025,2.225 C0.569,2.225 0.200,1.855 0.200,1.400 C0.200,0.944 0.569,0.575 1.025,0.575 L3.500,0.575 C3.860,0.575 4.163,0.807 4.276,1.128 L4.279,1.127 L4.759,2.500 L16.975,2.500 C17.431,2.500 17.800,2.869 17.800,3.325 C17.800,3.445 17.773,3.559 17.726,3.663 ZM5.337,4.150 L6.862,8.507 L13.951,8.034 L15.699,4.150 L5.337,4.150 Z"/>
-                        </svg>
-                    </a>
-                    <a class="header-nav__link--svg" href="#">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px">
-                        <path fill-rule="evenodd"
-                         d="M17.317,14.983 C17.615,15.281 17.800,15.694 17.800,16.150 C17.800,17.061 17.061,17.800 16.150,17.800 C15.694,17.800 15.282,17.615 14.983,17.316 L14.983,17.316 L10.147,12.481 C9.165,13.061 8.023,13.400 6.800,13.400 C3.155,13.400 0.200,10.445 0.200,6.800 C0.200,3.155 3.155,0.200 6.800,0.200 C10.445,0.200 13.400,3.155 13.400,6.800 C13.400,8.023 13.061,9.165 12.481,10.147 L17.317,14.983 L17.317,14.983 ZM6.800,1.850 C4.066,1.850 1.850,4.066 1.850,6.800 C1.850,9.534 4.066,11.750 6.800,11.750 C9.534,11.750 11.750,9.534 11.750,6.800 C11.750,4.066 9.534,1.850 6.800,1.850 Z"/>
-                        </svg>
-                    </a>
-                </nav>
+                    <div class="gallery__text">
+                        <img src="./img/user.svg" alt=""> super team
+                    </div>
 
+                </a>
+            </div>
+            <div class="gallery__element">
+                <a href="#" class="gallery__overlay">
+                    <img src="./img/img-2.jpg" alt="">
+
+                    <div class="gallery__text">
+                        <img src="./img/user.svg" alt=""> super team
+                    </div>
+
+                </a>
+            </div>
+            <div class="gallery__element">
+                <a href="#" class="gallery__overlay">
+                    <img src="./img/img-3.jpg" alt="">
+
+                    <div class="gallery__text">
+                        <img src="./img/user.svg" alt=""> super team
+                    </div>
+
+                </a>
             </div>
         </div>
-        <div class="fullscreen-slider">
-            <input type="radio" name="point" id="slide1" checked="checked">
-            <input type="radio" name="point" id="slide2">
-            <input type="radio" name="point" id="slide3">
-            <input type="radio" name="point" id="slide4">
-            <div class="slider-box">
-                <div class="slides slide1">
-                    <div class="slides-title">
-                        <h2 class="second-title">Creative Template</h2>
-                        <h1 class="first-title">welcome<br> to mogo</h1>
-                        <div class="separator"></div>
-                        <a class="btn__title" href="#">Learn more</a>
-                    </div>
-
-                </div>
-                <div class="slides slide2">
-                    <div class="slides-title">
-                        <h2 class="second-title">Creative Template</h2>
-                        <h1 class="first-title">welcome<br> to mogo</h1>
-                        <div class="separator"></div>
-                        <a class="btn__title" href="#">Learn more</a>
-                    </div>
-                </div>
-                <div class="slides slide3">
-                    <div class="slides-title">
-                        <h2 class="second-title">Creative Template</h2>
-                        <h1 class="first-title">welcome<br> to mogo</h1>
-                        <div class="separator"></div>
-                        <a class="btn__title" href="#">Learn more</a>
-                    </div>
-
-                </div>
-                <div class="slides slide4">
-                    <div class="slides-title">
-                        <h2 class="second-title">Creative Template</h2>
-                        <h1 class="first-title">welcome<br> to mogo</h1>
-                        <div class="separator"></div>
-                        <a class="btn__title" href="#">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="controls">
-                    <label class="control control1" for="slide1">
-                        <div class="progress-bar">
-                            <div class="progress-bar__time"></div>
-                        </div>
-                        <span class="progress-count__text" >intro</span>
-
-                    </label>
-                    <label class="control control2" for="slide2">
-                        <div class="progress-bar">
-                            <div class="progress-bar__time"></div>
-                        </div>
-                        <span class="progress-count__text" >work</span>
-                    </label>
-                    <label class="control control3" for="slide3">
-                        <div class="progress-bar">
-                            <div class="progress-bar__time"></div>
-                        </div>
-                        <span class="progress-count__text" >about</span>
-                    </label>
-                    <label class="control control4" for="slide4">
-                        <div class="progress-bar">
-                            <div class="progress-bar__time"></div>
-                        </div>
-                        <span class="progress-count__text" >contacts</span>
-                    </label>
-                </div>
+    </section>
+    <!-- COUNTING -->
+    <section class="counting">
+        <div class="container row">
+            <div class="counting__item">
+                <div class="counting__number">42</div>
+                <div class="counting__description">Web Design Projects</div>
             </div>
 
+            <div class="counting__item">
+                <div class="counting__number">123</div>
+                <div class="counting__description">Happy client</div>
+            </div>
+
+            <div class="counting__item">
+                <div class="counting__number">15</div>
+                <div class="counting__description">Award winner</div>
+            </div>
+
+            <div class="counting__item">
+                <div class="counting__number">99</div>
+                <div class="counting__description">Cup of coffee</div>
+            </div>
+
+            <div class="counting__item">
+                <div class="counting__number">24</div>
+                <div class="counting__description">Members</div>
+            </div>
         </div>
-    </header>
-    <section class="section-one">
+    </section>
+    <!-- INSTRUMENTS -->
+    <section class="instruments container">
+        <h2 class="section-title">
+            <span class="section-subtitle">We work with</span>
+            Amazing Services
+        </h2>
+        <div class="row">
+            <div class="instruments__item instruments__item_line">
+                <img class="instruments__icon" src="img/ALARM.svg" alt="">
+                <div class="instruments__content">
+                    <h5 class="instruments__title">Photography</h5>
+                    <p class="instruments__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+
+            <div class="instruments__item instruments__item_line">
+                <img class="instruments__icon" src="img/LINE-GRAPH.svg" alt="">
+                <div class="instruments__content">
+                    <h5 class="instruments__title">Web Design</h5>
+                    <p class="instruments__paragraph">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+
+            <div class="instruments__item instruments__item_line">
+                <img class="instruments__icon" src="img/COMPUTER_OK.svg" alt="">
+                <div class="instruments__content">
+                    <h5 class="instruments__title">Creativity</h5>
+                    <p class="instruments__paragraph">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+
+            <div class="instruments__item">
+                <img class="instruments__icon" src="img/BOOK.svg" alt="">
+                <div class="instruments__content">
+                    <h5 class="instruments__title">Seo</h5>
+                    <p class="instruments__paragraph">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                </div>
+            </div>
+
+            <div class="instruments__item">
+                <img class="instruments__icon" src="img/HOME.svg" alt="">
+                <div class="instruments__content">
+                    <h5 class="instruments__title">CSS/HTML</h5>
+                    <p class="instruments__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+
+            <div class="instruments__item">
+                <img class="instruments__icon" src="img/IMAGE.svg" alt="">
+                <div class="instruments__content">
+                    <h5 class="instruments__title">DIGITAL</h5>
+                    <p class="instruments__paragraph">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DESING -->
+    <section class="design">
+        <h2 class="section-title">
+            <span class="section-subtitle">For all devices</span>
+            Unique desing
+        </h2>
+        <div class="design__devices">
+            <img class="design__tablet" src="./img/ipad.png" alt="ipad">
+            <img class="design__mobile" src="./img/iphone.png" alt="iphone">
+        </div>
+    </section>
+    <!-- SERVICE -->
+    <section class="service">
         <div class="container">
-            <h4 class="fourth-title">What we do</h4>
-            <h3 class="third-title">story about us</h3>
-            <div class="separator red"></div>
-            <p class="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <h2 class="section-title">
+                <span class="section-subtitle">Service</span>
+                WHAT WE DO
+            </h2>
+            <p class="section__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-            <div class="gallery-three gallery-three">
-                <div class="gallery-three__element">
-                    <div class="gallery-three__img">
-                        <img src="img/jpg/s1_img.jpg" alt="">
-                        <div class="gallery-three__icon">
-                            super team
+            <div class="row">
+                <img class="service__img" src="./img/Layer43.jpg" alt="">
+                <div class="panel-group">
+                    <div class="panel-group__header">
+                        <div class="panel-group__element">
+                            <img class="panel-group__icon" src="img/PICTURE.svg" alt=""> PHOTOGRAPHY
                         </div>
+                        <img class="panel-group__icon-arrow" src="./img/ARROW-DOWN.svg" alt="">
                     </div>
-                </div>
-                <div class="gallery-three__element">
-                    <div class="gallery-three__img">
-                        <img src="img/jpg/s1_img2.jpg" alt="">
-                        <div class="gallery-three__icon">
-                            super team
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-three__element">
-                    <div class="gallery-three__img">
-                        <img src="img/jpg/s1_img3.jpg" alt="">
-                        <div class="gallery-three__icon">
-                            super team
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-two">
-        <div class="counter-row">
-            <div class="counter-box">
-                <span class="counter-box__number">42</span>
-                <p class="counter-box__text">Web Design Projects</p>
-            </div>
-            <div class="counter-box">
-                <span class="counter-box__number">123</span>
-                <p class="counter-box__text">happy client</p>
-            </div>
-            <div class="counter-box">
-                <span class="counter-box__number">15</span>
-                <p class="counter-box__text">award winner</p>
-            </div>
-            <div class="counter-box">
-                <span class="counter-box__number">99</span>
-                <p class="counter-box__text">cup of coffee</p>
-            </div>
-            <div class="counter-box">
-                <span class="counter-box__number">24</span>
-                <p class="counter-box__text">members</p>
-            </div>
-        </div>
-    </section>
-    <section class="section-three">
-        <div class="container">
-            <h4 class="fourth-title">We work with</h4>
-            <h3 class="third-title">Amazing Services</h3>
-            <div class="separator red"></div>
-            <div class="table-row__one">
-                <div class="table-cell">
-                    <img class="table-cell__img" src="img/svg/ALARM.svg" alt="">
-                    <div class="table-cell__text">
-                        <h5 class="fifth-title table-cell__title">Photography</h5>
-                        <p class="table-cell__paragraph">
-                            Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
-                <div class="table-cell">
-                    <img class="table-cell__img" src="img/svg/LINE-GRAPH.svg" alt="">
-                    <div class="table-cell__text">
-                        <h5 class="fifth-title table-cell__title">Web Design</h5>
-                        <p class="table-cell__paragraph">
-                            Ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
-                <div class="table-cell">
-                    <img class="table-cell__img" src="img/svg/COMPUTER_OK.svg" alt="">
-                    <div class="table-cell__text">
-                        <h5 class="fifth-title table-cell__title">Creativity</h5>
-                        <p class="table-cell__paragraph">
-                            Dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="table-row__two">
-                <div class="table-cell">
-                    <img class="table-cell__img" src="img/svg/BOOK.svg" alt="">
-                    <div class="table-cell__text">
-                        <h5 class="fifth-title table-cell__title">seo</h5>
-                        <p class="table-cell__paragraph">
-                            Ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod.
-                        </p>
-                    </div>
-                </div>
-                <div class="table-cell">
-                    <img class="table-cell__img" src="img/svg/HOME.svg" alt="">
-                    <div class="table-cell__text">
-                        <h5 class="fifth-title table-cell__title">Css/Html</h5>
-                        <p class="table-cell__paragraph">
-                            Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit, sed do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
-                <div class="table-cell">
-                    <img class="table-cell__img" src="img/svg/IMAGE.svg" alt="">
-                    <div class="table-cell__text">
-                        <h5 class="fifth-title table-cell__title">digital</h5>
-                        <p class="table-cell__paragraph">
-                            Sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section-four">
-        <div class="container">
-            <h4 class="fourth-title">For all devices</h4>
-            <h3 class="third-title">unique desing</h3>
-            <div class="separator red"></div>
-            <img class="apple" src="img/png/Apple.png" alt="apple">
-        </div>
-    </section>
-    <section class="section-five">
-        <div class="container">
-            <h4 class="fourth-title">Service</h4>
-            <h3 class="third-title">what we do</h3>
-            <div class="separator red"></div>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <div class="two-box">
-                <div class="two-box__img">
-                    <img src="img/jpg/Layer43.jpg" alt="">
-                </div>
-                <!--                -->
-                <div class="brief-info">
-
-                    <div class="brief-info__box">
-                        <input id="brief-info__input1" type="radio" name="tabs" checked>
-                        <label class="brief-info__lable" for="brief-info__input1">
-                        <img class="brief-info__img" src="img/svg/PICTURE.svg" alt="">
-                        <p>PHOTOGRAPHY</p>
-                        </label>
-                        <div class="brief-info__content">
-                            <div class="brief-info_scroll">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                    <div class="panel-group__content">
+                        <div class="panel-group__scroll">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
 
-                    <div class="brief-info__box brief-info__box__mrg">
-                        <input id="brief-info__input2" type="radio" name="tabs">
-                        <label class="brief-info__lable" for="brief-info__input2">
-                        <img class="brief-info__img" src="img/svg/EQUALIZER.svg" alt="">
-                        <p>creativity</p></label>
-                        <div class="brief-info__content">
-                            <div class="brief-info_scroll">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                    <div class="panel-group__header">
+                        <div class="panel-group__element">
+                            <img class="panel-group__icon" src="img/PICTURE.svg" alt=""> PHOTOGRAPHY
+                        </div>
+                        <img class="panel-group__icon-arrow" src="./img/ARROW-DOWN.svg" alt="">
+                    </div>
+                    <div class="panel-group__content" style="display:none;">
+                        <div class="panel-group__scroll">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
 
-                    <div class="brief-info__box brief-info__box__mrg">
-                        <input id="brief-info__input3" type="radio" name="tabs">
-                        <label class="brief-info__lable" for="brief-info__input3">
-                        <img class="brief-info__img" src="img/svg/BULLSEYE.svg" alt="">
-                        <p>web design</p>
-                        </label>
-                        <div class="brief-info__content">
-                            <div class="brief-info_scroll">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            </div>
+                    <div class="panel-group__header">
+                        <div class="panel-group__element">
+                            <img class="panel-group__icon" src="img/PICTURE.svg" alt=""> PHOTOGRAPHY
+                        </div>
+                        <img class="panel-group__icon-arrow" src="./img/ARROW-DOWN.svg" alt="">
+                    </div>
+                    <div class="panel-group__content" style="display:none;">
+                        <div class="panel-group__scroll">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum. nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="section-six">
+    <section class="quote">
         <div class="container">
-            <div class="comments">
-                <img class="comments__left-arrow" src="img/png/left-arrow.png" alt="">
-
-                <div class="comments-box">
-                    <img class="comments-box__img" src="img/png/SPEECH-4.png" alt="">
-                    <div class="comments-box__text">
-                        <q>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation.”
-                </q>
+            <div class="quote__slider">
+                <div class="quote__slide">
+                    <img class="quote__icon" src="./img/SPEECH.svg" alt="">
+                    <div class="quote__text">
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q>
                         <p>Jon Doe</p>
-
                     </div>
                 </div>
-                <img class="comments__right-arrow" src="img/png/right-arrow.png" alt="">
+                <div class="quote__slide">
+                    <img class="quote__icon" src="./img/SPEECH.svg" alt="">
+                    <div class="quote__text">
+                        <q>et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q>
+                        <p>Jon Doe</p>
+                    </div>
+                </div>
+                <div class="quote__slide">
+                        <img class="quote__icon" src="./img/SPEECH.svg" alt="">
+                        <div class="quote__text">
+                            <q>Sdipiscing elit, sed do eiusmod tempor incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</q>
+                            <p>Jon Doe</p>
+                        </div>
+                    </div>
+                <a class="quote__prev" onclick="plusSlides(-1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="22px">
+                        <path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M11.477,18.859 L3.619,11.002 L11.581,3.039 L11.580,3.039 C11.839,2.769 12.000,2.403 12.000,1.997 C12.000,1.169 11.329,0.498 10.501,0.498 C10.096,0.498 9.730,0.657 9.459,0.919 L9.459,0.918 L0.459,9.918 L0.460,9.919 C0.177,10.191 0.001,10.574 0.001,10.998 C0.001,10.999 0.001,11.001 0.001,11.002 C0.001,11.003 0.001,11.004 0.001,11.005 C0.001,11.428 0.177,11.811 0.460,12.084 L0.459,12.084 L9.459,21.084 L9.462,21.081 C9.732,21.339 10.098,21.498 10.501,21.498 C11.329,21.498 12.000,20.827 12.000,19.998 C12.000,19.543 11.798,19.135 11.477,18.859 Z"
+                        />
+                    </svg>
+                </a>
+                <a class="quote__next" onclick="plusSlides(1)">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="22px">
+                        <path fill-rule="evenodd" fill="rgb(204, 204, 204)" d="M0.523,18.859 L8.381,11.002 L0.419,3.039 L0.420,3.039 C0.160,2.769 -0.001,2.403 -0.001,1.997 C-0.001,1.169 0.671,0.498 1.499,0.498 C1.904,0.498 2.270,0.657 2.541,0.919 L2.541,0.918 L11.541,9.918 L11.540,9.919 C11.823,10.191 11.999,10.574 11.999,10.998 C11.999,10.999 11.999,11.001 11.999,11.002 C11.999,11.003 11.999,11.004 11.999,11.005 C11.999,11.428 11.823,11.811 11.540,12.084 L11.541,12.084 L2.541,21.084 L2.537,21.081 C2.268,21.339 1.902,21.498 1.499,21.498 C0.671,21.498 -0.001,20.827 -0.001,19.998 C-0.001,19.543 0.202,19.135 0.523,18.859 Z"
+                        />
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
-    <section class="section-seven">
-        <div class="container">
-            <h4 class="fourth-title">Who we are</h4>
-            <h3 class="third-title">Meet our team</h3>
-            <div class="separator red"></div>
 
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-            <div class="gallery-three">
-                <div class="gallery-three__box">
-                    <div class="gallery-three__element">
-                        <div class="gallery-three__img">
-                            <img src="img/jpg/Layer%2016.jpg" alt="">
-                            <div class="gallery-icons">
-                                <a href="#" class="gallery-link">
-                                    <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="13px" height="26px">
-<path fill-rule="evenodd"  
- d="M12.089,0.199 C12.089,1.675 12.089,4.320 12.089,4.320 C12.089,4.320 9.052,4.017 8.291,5.181 C7.875,5.817 8.122,7.681 8.085,9.019 C9.411,9.019 10.788,9.019 12.114,9.019 C11.774,10.583 11.530,11.643 11.279,12.997 C10.132,12.997 8.063,12.997 8.063,12.997 L8.063,25.801 C8.063,25.801 4.266,25.801 2.481,25.801 C2.482,21.854 2.480,17.249 2.481,13.047 C1.614,13.047 0.973,13.047 0.106,13.047 C0.106,11.572 0.106,10.496 0.106,9.019 C0.947,9.019 1.613,9.019 2.455,9.019 C2.575,6.073 2.620,3.155 4.084,1.669 C5.728,-0.002 7.297,0.199 12.089,0.199 Z"/>
-</svg>
-                                </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="26px" height="22px">
-<path fill-rule="evenodd"
- d="M17.513,0.601 C19.547,0.565 20.630,1.306 21.664,2.249 C22.542,2.173 23.683,1.683 24.355,1.341 C24.572,1.223 24.790,1.103 25.008,0.984 C24.624,2.021 24.104,2.833 23.304,3.450 C23.126,3.586 22.950,3.771 22.727,3.858 C22.727,3.862 22.727,3.867 22.727,3.871 C23.867,3.860 24.807,3.345 25.700,3.066 C25.700,3.070 25.700,3.075 25.700,3.079 C25.231,3.824 24.596,4.581 23.919,5.123 C23.646,5.340 23.372,5.557 23.099,5.774 C23.114,6.981 23.081,8.133 22.856,9.147 C21.544,15.042 18.068,19.045 12.567,20.759 C10.591,21.374 7.399,21.627 5.135,21.065 C4.013,20.787 2.999,20.472 2.048,20.057 C1.519,19.825 1.029,19.575 0.561,19.290 C0.407,19.196 0.254,19.102 0.100,19.009 C0.610,19.024 1.208,19.165 1.778,19.073 C2.295,18.989 2.801,19.011 3.278,18.907 C4.466,18.646 5.521,18.301 6.429,17.770 C6.870,17.511 7.539,17.209 7.852,16.837 C7.262,16.848 6.727,16.710 6.289,16.556 C4.590,15.956 3.601,14.853 2.957,13.196 C3.472,13.253 4.955,13.387 5.302,13.094 C4.654,13.058 4.031,12.683 3.585,12.405 C2.218,11.549 1.104,10.115 1.112,7.908 C1.292,7.993 1.471,8.078 1.650,8.163 C1.994,8.308 2.343,8.385 2.752,8.470 C2.925,8.506 3.271,8.607 3.470,8.533 C3.461,8.533 3.453,8.533 3.444,8.533 C3.180,8.226 2.749,8.021 2.483,7.690 C1.606,6.601 0.785,4.924 1.304,2.926 C1.436,2.419 1.645,1.972 1.868,1.559 C1.877,1.563 1.885,1.567 1.894,1.571 C1.996,1.785 2.224,1.942 2.368,2.121 C2.816,2.676 3.368,3.175 3.931,3.615 C5.849,5.116 7.576,6.037 10.350,6.719 C11.054,6.893 11.867,7.025 12.708,7.026 C12.472,6.339 12.548,5.226 12.733,4.561 C13.201,2.887 14.216,1.682 15.706,1.036 C16.062,0.881 16.457,0.768 16.872,0.677 C17.086,0.652 17.299,0.626 17.513,0.601 Z"/>
-</svg>
-                            </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="21px" height="26px">
-<path fill-rule="evenodd"
- d="M9.051,16.854 C8.842,17.687 8.631,18.560 8.413,19.414 C8.198,20.256 8.008,21.110 7.695,21.884 C7.176,23.165 6.517,24.403 5.652,25.405 C5.077,26.072 5.199,25.806 5.026,25.770 C4.894,25.743 4.883,25.613 4.857,25.425 C4.716,24.407 4.812,23.230 4.864,22.086 C4.924,20.782 5.198,19.698 5.453,18.615 C5.937,16.552 6.399,14.528 6.888,12.451 C6.920,12.313 7.008,12.085 6.978,12.006 C6.756,11.429 6.612,10.911 6.549,10.306 C6.476,9.610 6.532,8.961 6.688,8.362 C6.965,7.304 7.601,6.367 8.582,6.024 C9.206,5.808 9.897,5.906 10.317,6.156 C10.749,6.415 11.046,6.823 11.184,7.402 C11.332,8.017 11.223,8.753 11.104,9.293 C10.837,10.512 10.486,11.427 10.167,12.603 C10.009,13.186 9.830,13.785 9.978,14.415 C10.114,14.993 10.415,15.391 10.825,15.690 C11.251,16.000 11.755,16.169 12.450,16.145 C13.678,16.102 14.531,15.317 15.101,14.577 C16.014,13.392 16.566,11.793 16.776,9.891 C16.843,9.277 16.893,8.572 16.846,7.877 C16.758,6.593 16.357,5.560 15.719,4.760 C15.113,3.998 14.253,3.391 13.207,3.049 C12.170,2.711 10.735,2.598 9.460,2.816 C7.142,3.213 5.508,4.530 4.545,6.349 C4.041,7.301 3.708,8.396 3.708,9.759 C3.708,10.810 3.967,11.624 4.386,12.259 C4.519,12.460 4.714,12.626 4.844,12.856 C5.029,13.182 4.816,13.667 4.725,14.020 C4.615,14.445 4.603,15.032 4.107,15.042 C3.901,15.046 3.643,14.896 3.469,14.799 C2.164,14.078 1.372,12.766 1.047,11.065 C0.849,10.031 0.850,8.826 1.047,7.827 C1.237,6.860 1.591,5.969 1.984,5.246 C2.798,3.743 3.991,2.541 5.443,1.683 C6.559,1.023 7.818,0.560 9.350,0.337 C9.858,0.263 10.384,0.232 10.955,0.206 C12.623,0.127 14.139,0.505 15.281,1.015 C16.486,1.554 17.448,2.271 18.261,3.161 C19.099,4.076 19.709,5.140 20.095,6.470 C20.297,7.162 20.493,7.902 20.493,8.757 C20.493,9.615 20.312,10.370 20.185,11.125 C19.711,13.953 18.366,16.266 16.347,17.583 C15.858,17.902 15.266,18.196 14.593,18.392 C13.926,18.586 13.165,18.732 12.350,18.675 C11.559,18.621 10.911,18.406 10.367,18.098 C9.827,17.793 9.373,17.419 9.051,16.854 Z"/>
-</svg>
-                            </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="26px" height="26px">
-<path fill-rule="evenodd"
- d="M22.700,25.800 L3.500,25.800 C1.733,25.800 0.300,24.367 0.300,22.600 L0.300,3.400 C0.300,1.632 1.733,0.200 3.500,0.200 L22.700,0.200 C24.467,0.200 25.900,1.632 25.900,3.400 L25.900,22.600 C25.900,24.367 24.467,25.800 22.700,25.800 ZM13.100,8.039 C11.104,8.039 9.389,9.221 8.602,10.919 L8.597,10.919 C8.589,10.937 8.583,10.956 8.575,10.974 C8.528,11.079 8.487,11.187 8.447,11.296 C8.428,11.348 8.407,11.399 8.390,11.451 C8.353,11.563 8.323,11.676 8.295,11.791 C8.281,11.845 8.265,11.897 8.253,11.951 C8.227,12.072 8.209,12.195 8.192,12.319 C8.185,12.369 8.175,12.418 8.169,12.469 C8.151,12.643 8.140,12.820 8.140,13.000 C8.140,15.739 10.361,17.959 13.100,17.959 C15.839,17.959 18.060,15.739 18.060,13.000 C18.060,12.820 18.049,12.643 18.031,12.469 C18.025,12.418 18.015,12.369 18.008,12.319 C17.991,12.195 17.973,12.072 17.947,11.951 C17.935,11.897 17.919,11.845 17.905,11.791 C17.877,11.676 17.847,11.563 17.810,11.451 C17.793,11.399 17.772,11.348 17.753,11.296 C17.713,11.187 17.672,11.079 17.625,10.974 C17.617,10.956 17.611,10.937 17.603,10.919 L17.598,10.919 C16.811,9.221 15.096,8.039 13.100,8.039 ZM23.020,4.359 C23.020,3.652 22.447,3.080 21.740,3.080 L19.180,3.080 C18.473,3.080 17.900,3.652 17.900,4.359 L17.900,6.920 C17.900,7.627 18.473,8.200 19.180,8.200 L21.740,8.200 C22.447,8.200 23.020,7.627 23.020,6.920 L23.020,4.359 ZM23.020,10.919 L20.660,10.919 C20.842,11.582 20.940,12.280 20.940,13.000 C20.940,17.330 17.430,20.839 13.100,20.839 C8.770,20.839 5.260,17.330 5.260,13.000 C5.260,12.280 5.358,11.582 5.540,10.919 L3.180,10.919 L3.180,21.639 C3.180,22.347 3.753,22.920 4.460,22.920 L21.740,22.920 C22.447,22.920 23.020,22.347 23.020,21.639 L23.020,10.919 Z"/>
-</svg>
-                            </a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="gallery-three__text">
-                        <h5>MATTHEW DIX</h5>
-                        <p>Graphic Design</p>
-                    </div>
-                </div>
-                <div class="gallery-three__box">
-                    <div class="gallery-three__element">
-                        <div class="gallery-three__img">
-                            <img src="img/jpg/Layer%2019.png" alt="">
-                            <div class="gallery-icons">
-                                <a href="#" class="gallery-link">
-                                    <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="13px" height="26px">
-<path fill-rule="evenodd"  
- d="M12.089,0.199 C12.089,1.675 12.089,4.320 12.089,4.320 C12.089,4.320 9.052,4.017 8.291,5.181 C7.875,5.817 8.122,7.681 8.085,9.019 C9.411,9.019 10.788,9.019 12.114,9.019 C11.774,10.583 11.530,11.643 11.279,12.997 C10.132,12.997 8.063,12.997 8.063,12.997 L8.063,25.801 C8.063,25.801 4.266,25.801 2.481,25.801 C2.482,21.854 2.480,17.249 2.481,13.047 C1.614,13.047 0.973,13.047 0.106,13.047 C0.106,11.572 0.106,10.496 0.106,9.019 C0.947,9.019 1.613,9.019 2.455,9.019 C2.575,6.073 2.620,3.155 4.084,1.669 C5.728,-0.002 7.297,0.199 12.089,0.199 Z"/>
-</svg>
-                                </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="26px" height="22px">
-<path fill-rule="evenodd"
- d="M17.513,0.601 C19.547,0.565 20.630,1.306 21.664,2.249 C22.542,2.173 23.683,1.683 24.355,1.341 C24.572,1.223 24.790,1.103 25.008,0.984 C24.624,2.021 24.104,2.833 23.304,3.450 C23.126,3.586 22.950,3.771 22.727,3.858 C22.727,3.862 22.727,3.867 22.727,3.871 C23.867,3.860 24.807,3.345 25.700,3.066 C25.700,3.070 25.700,3.075 25.700,3.079 C25.231,3.824 24.596,4.581 23.919,5.123 C23.646,5.340 23.372,5.557 23.099,5.774 C23.114,6.981 23.081,8.133 22.856,9.147 C21.544,15.042 18.068,19.045 12.567,20.759 C10.591,21.374 7.399,21.627 5.135,21.065 C4.013,20.787 2.999,20.472 2.048,20.057 C1.519,19.825 1.029,19.575 0.561,19.290 C0.407,19.196 0.254,19.102 0.100,19.009 C0.610,19.024 1.208,19.165 1.778,19.073 C2.295,18.989 2.801,19.011 3.278,18.907 C4.466,18.646 5.521,18.301 6.429,17.770 C6.870,17.511 7.539,17.209 7.852,16.837 C7.262,16.848 6.727,16.710 6.289,16.556 C4.590,15.956 3.601,14.853 2.957,13.196 C3.472,13.253 4.955,13.387 5.302,13.094 C4.654,13.058 4.031,12.683 3.585,12.405 C2.218,11.549 1.104,10.115 1.112,7.908 C1.292,7.993 1.471,8.078 1.650,8.163 C1.994,8.308 2.343,8.385 2.752,8.470 C2.925,8.506 3.271,8.607 3.470,8.533 C3.461,8.533 3.453,8.533 3.444,8.533 C3.180,8.226 2.749,8.021 2.483,7.690 C1.606,6.601 0.785,4.924 1.304,2.926 C1.436,2.419 1.645,1.972 1.868,1.559 C1.877,1.563 1.885,1.567 1.894,1.571 C1.996,1.785 2.224,1.942 2.368,2.121 C2.816,2.676 3.368,3.175 3.931,3.615 C5.849,5.116 7.576,6.037 10.350,6.719 C11.054,6.893 11.867,7.025 12.708,7.026 C12.472,6.339 12.548,5.226 12.733,4.561 C13.201,2.887 14.216,1.682 15.706,1.036 C16.062,0.881 16.457,0.768 16.872,0.677 C17.086,0.652 17.299,0.626 17.513,0.601 Z"/>
-</svg>
-                            </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="21px" height="26px">
-<path fill-rule="evenodd"
- d="M9.051,16.854 C8.842,17.687 8.631,18.560 8.413,19.414 C8.198,20.256 8.008,21.110 7.695,21.884 C7.176,23.165 6.517,24.403 5.652,25.405 C5.077,26.072 5.199,25.806 5.026,25.770 C4.894,25.743 4.883,25.613 4.857,25.425 C4.716,24.407 4.812,23.230 4.864,22.086 C4.924,20.782 5.198,19.698 5.453,18.615 C5.937,16.552 6.399,14.528 6.888,12.451 C6.920,12.313 7.008,12.085 6.978,12.006 C6.756,11.429 6.612,10.911 6.549,10.306 C6.476,9.610 6.532,8.961 6.688,8.362 C6.965,7.304 7.601,6.367 8.582,6.024 C9.206,5.808 9.897,5.906 10.317,6.156 C10.749,6.415 11.046,6.823 11.184,7.402 C11.332,8.017 11.223,8.753 11.104,9.293 C10.837,10.512 10.486,11.427 10.167,12.603 C10.009,13.186 9.830,13.785 9.978,14.415 C10.114,14.993 10.415,15.391 10.825,15.690 C11.251,16.000 11.755,16.169 12.450,16.145 C13.678,16.102 14.531,15.317 15.101,14.577 C16.014,13.392 16.566,11.793 16.776,9.891 C16.843,9.277 16.893,8.572 16.846,7.877 C16.758,6.593 16.357,5.560 15.719,4.760 C15.113,3.998 14.253,3.391 13.207,3.049 C12.170,2.711 10.735,2.598 9.460,2.816 C7.142,3.213 5.508,4.530 4.545,6.349 C4.041,7.301 3.708,8.396 3.708,9.759 C3.708,10.810 3.967,11.624 4.386,12.259 C4.519,12.460 4.714,12.626 4.844,12.856 C5.029,13.182 4.816,13.667 4.725,14.020 C4.615,14.445 4.603,15.032 4.107,15.042 C3.901,15.046 3.643,14.896 3.469,14.799 C2.164,14.078 1.372,12.766 1.047,11.065 C0.849,10.031 0.850,8.826 1.047,7.827 C1.237,6.860 1.591,5.969 1.984,5.246 C2.798,3.743 3.991,2.541 5.443,1.683 C6.559,1.023 7.818,0.560 9.350,0.337 C9.858,0.263 10.384,0.232 10.955,0.206 C12.623,0.127 14.139,0.505 15.281,1.015 C16.486,1.554 17.448,2.271 18.261,3.161 C19.099,4.076 19.709,5.140 20.095,6.470 C20.297,7.162 20.493,7.902 20.493,8.757 C20.493,9.615 20.312,10.370 20.185,11.125 C19.711,13.953 18.366,16.266 16.347,17.583 C15.858,17.902 15.266,18.196 14.593,18.392 C13.926,18.586 13.165,18.732 12.350,18.675 C11.559,18.621 10.911,18.406 10.367,18.098 C9.827,17.793 9.373,17.419 9.051,16.854 Z"/>
-</svg>
-                            </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="26px" height="26px">
-<path fill-rule="evenodd"
- d="M22.700,25.800 L3.500,25.800 C1.733,25.800 0.300,24.367 0.300,22.600 L0.300,3.400 C0.300,1.632 1.733,0.200 3.500,0.200 L22.700,0.200 C24.467,0.200 25.900,1.632 25.900,3.400 L25.900,22.600 C25.900,24.367 24.467,25.800 22.700,25.800 ZM13.100,8.039 C11.104,8.039 9.389,9.221 8.602,10.919 L8.597,10.919 C8.589,10.937 8.583,10.956 8.575,10.974 C8.528,11.079 8.487,11.187 8.447,11.296 C8.428,11.348 8.407,11.399 8.390,11.451 C8.353,11.563 8.323,11.676 8.295,11.791 C8.281,11.845 8.265,11.897 8.253,11.951 C8.227,12.072 8.209,12.195 8.192,12.319 C8.185,12.369 8.175,12.418 8.169,12.469 C8.151,12.643 8.140,12.820 8.140,13.000 C8.140,15.739 10.361,17.959 13.100,17.959 C15.839,17.959 18.060,15.739 18.060,13.000 C18.060,12.820 18.049,12.643 18.031,12.469 C18.025,12.418 18.015,12.369 18.008,12.319 C17.991,12.195 17.973,12.072 17.947,11.951 C17.935,11.897 17.919,11.845 17.905,11.791 C17.877,11.676 17.847,11.563 17.810,11.451 C17.793,11.399 17.772,11.348 17.753,11.296 C17.713,11.187 17.672,11.079 17.625,10.974 C17.617,10.956 17.611,10.937 17.603,10.919 L17.598,10.919 C16.811,9.221 15.096,8.039 13.100,8.039 ZM23.020,4.359 C23.020,3.652 22.447,3.080 21.740,3.080 L19.180,3.080 C18.473,3.080 17.900,3.652 17.900,4.359 L17.900,6.920 C17.900,7.627 18.473,8.200 19.180,8.200 L21.740,8.200 C22.447,8.200 23.020,7.627 23.020,6.920 L23.020,4.359 ZM23.020,10.919 L20.660,10.919 C20.842,11.582 20.940,12.280 20.940,13.000 C20.940,17.330 17.430,20.839 13.100,20.839 C8.770,20.839 5.260,17.330 5.260,13.000 C5.260,12.280 5.358,11.582 5.540,10.919 L3.180,10.919 L3.180,21.639 C3.180,22.347 3.753,22.920 4.460,22.920 L21.740,22.920 C22.447,22.920 23.020,22.347 23.020,21.639 L23.020,10.919 Z"/>
-</svg>
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-three__text">
-                        <h5>CHRISTOPHER CAMPBELL</h5>
-                        <p>Branding/UX design</p>
-                    </div>
-                </div>
-                <div class="gallery-three__box">
-                    <div class="gallery-three__element">
-                        <div class="gallery-three__img">
-                            <img src="img/jpg/Layer%2018.png" alt="">
-                            <div class="gallery-icons">
-                                <a href="#" class="gallery-link">
-                                    <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="13px" height="26px">
-<path fill-rule="evenodd"  
- d="M12.089,0.199 C12.089,1.675 12.089,4.320 12.089,4.320 C12.089,4.320 9.052,4.017 8.291,5.181 C7.875,5.817 8.122,7.681 8.085,9.019 C9.411,9.019 10.788,9.019 12.114,9.019 C11.774,10.583 11.530,11.643 11.279,12.997 C10.132,12.997 8.063,12.997 8.063,12.997 L8.063,25.801 C8.063,25.801 4.266,25.801 2.481,25.801 C2.482,21.854 2.480,17.249 2.481,13.047 C1.614,13.047 0.973,13.047 0.106,13.047 C0.106,11.572 0.106,10.496 0.106,9.019 C0.947,9.019 1.613,9.019 2.455,9.019 C2.575,6.073 2.620,3.155 4.084,1.669 C5.728,-0.002 7.297,0.199 12.089,0.199 Z"/>
-</svg>
-                                </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="26px" height="22px">
-<path fill-rule="evenodd"
- d="M17.513,0.601 C19.547,0.565 20.630,1.306 21.664,2.249 C22.542,2.173 23.683,1.683 24.355,1.341 C24.572,1.223 24.790,1.103 25.008,0.984 C24.624,2.021 24.104,2.833 23.304,3.450 C23.126,3.586 22.950,3.771 22.727,3.858 C22.727,3.862 22.727,3.867 22.727,3.871 C23.867,3.860 24.807,3.345 25.700,3.066 C25.700,3.070 25.700,3.075 25.700,3.079 C25.231,3.824 24.596,4.581 23.919,5.123 C23.646,5.340 23.372,5.557 23.099,5.774 C23.114,6.981 23.081,8.133 22.856,9.147 C21.544,15.042 18.068,19.045 12.567,20.759 C10.591,21.374 7.399,21.627 5.135,21.065 C4.013,20.787 2.999,20.472 2.048,20.057 C1.519,19.825 1.029,19.575 0.561,19.290 C0.407,19.196 0.254,19.102 0.100,19.009 C0.610,19.024 1.208,19.165 1.778,19.073 C2.295,18.989 2.801,19.011 3.278,18.907 C4.466,18.646 5.521,18.301 6.429,17.770 C6.870,17.511 7.539,17.209 7.852,16.837 C7.262,16.848 6.727,16.710 6.289,16.556 C4.590,15.956 3.601,14.853 2.957,13.196 C3.472,13.253 4.955,13.387 5.302,13.094 C4.654,13.058 4.031,12.683 3.585,12.405 C2.218,11.549 1.104,10.115 1.112,7.908 C1.292,7.993 1.471,8.078 1.650,8.163 C1.994,8.308 2.343,8.385 2.752,8.470 C2.925,8.506 3.271,8.607 3.470,8.533 C3.461,8.533 3.453,8.533 3.444,8.533 C3.180,8.226 2.749,8.021 2.483,7.690 C1.606,6.601 0.785,4.924 1.304,2.926 C1.436,2.419 1.645,1.972 1.868,1.559 C1.877,1.563 1.885,1.567 1.894,1.571 C1.996,1.785 2.224,1.942 2.368,2.121 C2.816,2.676 3.368,3.175 3.931,3.615 C5.849,5.116 7.576,6.037 10.350,6.719 C11.054,6.893 11.867,7.025 12.708,7.026 C12.472,6.339 12.548,5.226 12.733,4.561 C13.201,2.887 14.216,1.682 15.706,1.036 C16.062,0.881 16.457,0.768 16.872,0.677 C17.086,0.652 17.299,0.626 17.513,0.601 Z"/>
-</svg>
-                            </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="21px" height="26px">
-<path fill-rule="evenodd"
- d="M9.051,16.854 C8.842,17.687 8.631,18.560 8.413,19.414 C8.198,20.256 8.008,21.110 7.695,21.884 C7.176,23.165 6.517,24.403 5.652,25.405 C5.077,26.072 5.199,25.806 5.026,25.770 C4.894,25.743 4.883,25.613 4.857,25.425 C4.716,24.407 4.812,23.230 4.864,22.086 C4.924,20.782 5.198,19.698 5.453,18.615 C5.937,16.552 6.399,14.528 6.888,12.451 C6.920,12.313 7.008,12.085 6.978,12.006 C6.756,11.429 6.612,10.911 6.549,10.306 C6.476,9.610 6.532,8.961 6.688,8.362 C6.965,7.304 7.601,6.367 8.582,6.024 C9.206,5.808 9.897,5.906 10.317,6.156 C10.749,6.415 11.046,6.823 11.184,7.402 C11.332,8.017 11.223,8.753 11.104,9.293 C10.837,10.512 10.486,11.427 10.167,12.603 C10.009,13.186 9.830,13.785 9.978,14.415 C10.114,14.993 10.415,15.391 10.825,15.690 C11.251,16.000 11.755,16.169 12.450,16.145 C13.678,16.102 14.531,15.317 15.101,14.577 C16.014,13.392 16.566,11.793 16.776,9.891 C16.843,9.277 16.893,8.572 16.846,7.877 C16.758,6.593 16.357,5.560 15.719,4.760 C15.113,3.998 14.253,3.391 13.207,3.049 C12.170,2.711 10.735,2.598 9.460,2.816 C7.142,3.213 5.508,4.530 4.545,6.349 C4.041,7.301 3.708,8.396 3.708,9.759 C3.708,10.810 3.967,11.624 4.386,12.259 C4.519,12.460 4.714,12.626 4.844,12.856 C5.029,13.182 4.816,13.667 4.725,14.020 C4.615,14.445 4.603,15.032 4.107,15.042 C3.901,15.046 3.643,14.896 3.469,14.799 C2.164,14.078 1.372,12.766 1.047,11.065 C0.849,10.031 0.850,8.826 1.047,7.827 C1.237,6.860 1.591,5.969 1.984,5.246 C2.798,3.743 3.991,2.541 5.443,1.683 C6.559,1.023 7.818,0.560 9.350,0.337 C9.858,0.263 10.384,0.232 10.955,0.206 C12.623,0.127 14.139,0.505 15.281,1.015 C16.486,1.554 17.448,2.271 18.261,3.161 C19.099,4.076 19.709,5.140 20.095,6.470 C20.297,7.162 20.493,7.902 20.493,8.757 C20.493,9.615 20.312,10.370 20.185,11.125 C19.711,13.953 18.366,16.266 16.347,17.583 C15.858,17.902 15.266,18.196 14.593,18.392 C13.926,18.586 13.165,18.732 12.350,18.675 C11.559,18.621 10.911,18.406 10.367,18.098 C9.827,17.793 9.373,17.419 9.051,16.854 Z"/>
-</svg>
-                            </a>
-                                <a href="#" class="gallery-link">
-                                <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="26px" height="26px">
-<path fill-rule="evenodd"
- d="M22.700,25.800 L3.500,25.800 C1.733,25.800 0.300,24.367 0.300,22.600 L0.300,3.400 C0.300,1.632 1.733,0.200 3.500,0.200 L22.700,0.200 C24.467,0.200 25.900,1.632 25.900,3.400 L25.900,22.600 C25.900,24.367 24.467,25.800 22.700,25.800 ZM13.100,8.039 C11.104,8.039 9.389,9.221 8.602,10.919 L8.597,10.919 C8.589,10.937 8.583,10.956 8.575,10.974 C8.528,11.079 8.487,11.187 8.447,11.296 C8.428,11.348 8.407,11.399 8.390,11.451 C8.353,11.563 8.323,11.676 8.295,11.791 C8.281,11.845 8.265,11.897 8.253,11.951 C8.227,12.072 8.209,12.195 8.192,12.319 C8.185,12.369 8.175,12.418 8.169,12.469 C8.151,12.643 8.140,12.820 8.140,13.000 C8.140,15.739 10.361,17.959 13.100,17.959 C15.839,17.959 18.060,15.739 18.060,13.000 C18.060,12.820 18.049,12.643 18.031,12.469 C18.025,12.418 18.015,12.369 18.008,12.319 C17.991,12.195 17.973,12.072 17.947,11.951 C17.935,11.897 17.919,11.845 17.905,11.791 C17.877,11.676 17.847,11.563 17.810,11.451 C17.793,11.399 17.772,11.348 17.753,11.296 C17.713,11.187 17.672,11.079 17.625,10.974 C17.617,10.956 17.611,10.937 17.603,10.919 L17.598,10.919 C16.811,9.221 15.096,8.039 13.100,8.039 ZM23.020,4.359 C23.020,3.652 22.447,3.080 21.740,3.080 L19.180,3.080 C18.473,3.080 17.900,3.652 17.900,4.359 L17.900,6.920 C17.900,7.627 18.473,8.200 19.180,8.200 L21.740,8.200 C22.447,8.200 23.020,7.627 23.020,6.920 L23.020,4.359 ZM23.020,10.919 L20.660,10.919 C20.842,11.582 20.940,12.280 20.940,13.000 C20.940,17.330 17.430,20.839 13.100,20.839 C8.770,20.839 5.260,17.330 5.260,13.000 C5.260,12.280 5.358,11.582 5.540,10.919 L3.180,10.919 L3.180,21.639 C3.180,22.347 3.753,22.920 4.460,22.920 L21.740,22.920 C22.447,22.920 23.020,22.347 23.020,21.639 L23.020,10.919 Z"/>
-</svg>
-                            </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gallery-three__text">
-                        <h5>MICHAEL FERTIG</h5>
-                        <p>Developer</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section class="section-eight">
-        <div class="container">
-            <img src="img/png/Layer%2025.png" alt="">
-        </div>
-    </section>
-    <section class="section-nine">
-        <div class="container">
-            <h4 class="fourth-title">What we do copy</h4>
-            <h3 class="third-title">some of our work</h3>
-            <div class="separator red"></div>
-            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-
-        </div>
-    </section>
-    <section class="section-ten">
-        <div class="section-ten__column">
-            <img src="img/jpg/s-9-1.jpg" style="width:100%">
-            <img src="img/jpg/s-9-2.jpg" style="width:100%">
-        </div>
-        <div class="section-ten__column">
-            <img src="img/jpg/s-9-3.jpg" style="width:100%">
-            <img src="img/jpg/s-9-4.jpg" style="width:100%">
-        </div>
-        <div class="section-ten__column">
-            <img src="img/jpg/s-9-5.jpg" style="width:100%">
-        </div>
-        <div class="section-ten__column">
-            <img src="img/jpg/s-9-6.jpg" style="width:100%">
-            <img src="img/jpg/s-9-7.jpg" style="width:100%">
-        </div>
-    </section>
-    <section class="section-eleven">
-        <div class="container">
-            <div class="comments">
-                <img class="comments__left-arrow" src="img/png/left-arrow.png" alt="">
-
-                <div class="comments-box">
-                    <img class="comments-box__img" src="img/png/s11.png" alt="">
-                    <div class="comments-box__text">
-                        <q>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                </q>
-                        <p>Joshua Earle</p>
-
-
-                    </div>
-                </div>
-                <img class="comments__right-arrow" src="img/png/right-arrow.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="section-twelve">
-        <div class="container">
-            <h4 class="fourth-title">Happy Clients</h4>
-            <h3 class="third-title">What people say</h3>
-            <div class="separator red"></div>
-
-            <div class="sec-twelve__row">
-                <div class="sec-12_cell">
-                    <img src="img/png/s12-1.png" alt="">
-                    <div class="sec-12_text">
-                        <h5>Matthew Dix</h5>
-                        <em>Graphic Design</em>
-                        <div class="separator-s12"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut enim ad minim.</p>
-                    </div>
-                </div>
-
-                <div class="sec-12_cell">
-                    <img src="img/png/s12-2.png" alt="">
-                    <div class="sec-12_text">
-                        <h5>Nick Karvounis</h5>
-                        <em>Graphic Design</em>
-                        <div class="separator-s12"></div>
-                        <p>Sit amet, consectetur adipiscing elit, sed do eiusmod<br> tempor incididunt ut labore et dolore magna aliqua. Ut <br>enim ad minim veniam</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sec-12_row2">
-                <div class="sec-12_cell">
-                    <img src="img/png/s12-3.png" alt="">
-                    <div class="sec-12_text">
-                        <h5>Jaelynn Castillo </h5>
-                        <em>Graphic Design</em>
-                        <div class="separator-s12"></div>
-                        <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam</p>
-                    </div>
-                </div>
-
-                <div class="sec-12_cell">
-                    <img src="img/png/s12-4.png" alt="">
-                    <div class="sec-12_text">
-                        <h5>Mike Petrucci</h5>
-                        <em>Graphic Design</em>
-                        <div class="separator-s12"></div>
-                        <p>Dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="section-thirteen">
-        <div class="container">
-            <h4 class="fourth-title">Our stories</h4>
-            <h3 class="third-title">Latest blog</h3>
-            <div class="separator red"></div>
-            <div class="s13_row">
-                <div class="s13_coll">
-                    <div class="s13_block">
-                        <div class="s13_img">
-                            <img src="img/png/s13_1.png" alt="">
-                            <div class="s13_data">
-                                <h5>15</h5>
-                                <em>Jan</em>
-                            </div>
-                        </div>
-                        <h4>Lorem ipsum dolor sit amet</h4>
-                        <p>Consectetur adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <div class="s13_num">
-                        <div class="s13_num1">
-                            <img src="img/svg/s13_VIEW.svg" alt=""> 542
-                        </div>
-                        <div class="s13_num2">
-                            <img src="img/svg/s13_SPEECH-BUBBLE%202.svg" alt=""> 17
-                        </div>
-                    </div>
-                </div>
-
-                <div class="s13_coll">
-                    <div class="s13_block">
-                        <div class="s13_img">
-                            <img src="img/png/s13_2.png" alt="">
-                            <div class="s13_data">
-                                <h5>14</h5>
-                                <em>Jan</em>
-                            </div>
-                        </div>
-                        <h4>sed do eiusmod tempor</h4>
-                        <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore<br> et dolore magna aliqua.</p>
-                    </div>
-                    <div class="s13_num">
-                        <div class="s13_num1">
-                            <img src="img/svg/s13_VIEW.svg" alt=""> 992
-                        </div>
-                        <div class="s13_num2">
-                            <img src="img/svg/s13_SPEECH-BUBBLE%202.svg" alt=""> 42
-                        </div>
-                    </div>
-                </div>
-
-                <div class="s13_coll">
-                    <div class="s13_block">
-                        <div class="s13_img">
-                            <img src="img/png/s13_3.png" alt="">
-                            <div class="s13_data">
-                                <h5>12</h5>
-                                <em>Jan</em>
-                            </div>
-                        </div>
-                        <h4>incididunt ut labore et dolore</h4>
-                        <p>Elit, sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua.</p>
-                    </div>
-                    <div class="s13_num">
-                        <div class="s13_num1">
-                            <img src="img/svg/s13_VIEW.svg" alt=""> 1560
-                        </div>
-                        <div class="s13_num2">
-                            <img src="img/svg/s13_SPEECH-BUBBLE%202.svg" alt=""> 98
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <section class="section-fourteen">
-        <div class="container">
-            <img src="img/svg/s14_1.svg" alt="">
-            <h2>open map</h2>
-            <div class="separator red"></div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__row">
-                <div class="footer__text">
-                    <h2>MoGo</h2>
-                    <p class="footer__t-p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut<br> aliquip ex ea commodo consequat.</p>
-
-                    <p class="footer__t-p2">15k <span>followers</span></p>
-
-                    <em>Follow Us:</em>
-
-                    <ul class="social">
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/facebook.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/twitter.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/instagram.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/pinterest.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/google-plus.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/youtube.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/dribbble.png" alt=""></a></li>
-                        <li class="social-item"><a href="#" class="social-link"><img src="img/png/tumblr.png" alt=""></a></li>
-                    </ul>
-
-                    <form action="" method="post" class="email-form">
-                        <input type="email" class="email-input" placeholder="Your Email...">
-                        <button type="submit" class="email-submit">Subscribe</button>
-                    </form>
-                </div>
-                <div class="footer__blog">
-                    <h3>BLOGS</h3>
-
-                    <div class="blog-block">
-                        <img src="img/png/blogs-1.png" alt="">
-                        <div class="block-text">
-                            <p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing</p>
-                            <span>Jan 9,2016</span>
-                        </div>
-                    </div>
-
-                    <div class="blog-block">
-                        <img src="img/png/blogs-2.png" alt="">
-                        <div class="block-text">
-                            <p>Consectetur adipiscing elit,<br> sed do eiusmod tempor</p>
-                            <span>Jan 9,2016</span>
-                        </div>
-                    </div>
-
-                    <div class="blog-block blog-end">
-                        <img src="img/png/blogs-3.png" alt="">
-                        <div class="block-text">
-                            <p>sed do eiusmod tempor<br> incididunt ut labore</p>
-                            <span>Jan 9,2016</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__ins">
-                    <h3>instagram</h3>
-                    <div class="footer__ins_photos">
-                        <img src="img/png/ins-1.png" alt="">
-                        <img src="img/png/ins-2.png" alt="">
-                        <img src="img/png/ins-3.png" alt="">
-                        <img src="img/png/ins-4.png" alt="">
-                        <img src="img/png/ins-5.png" alt="">
-                        <img src="img/png/ins-6.png" alt="">
-                        <img src="img/png/ins-7.png" alt="">
-                        <img src="img/png/ins-8.png" alt="">
-                        <img src="img/png/ins-9.png" alt="">
-                    </div>
-                    <p>View more photos</p>
-                </div>
-            </div>
-            <div class="footer__box">
-                <p>© 2016 MoGo free PSD template by <span>Laaqiq</span></p>
-            </div>
-        </div>
-
-    </footer>
-
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
