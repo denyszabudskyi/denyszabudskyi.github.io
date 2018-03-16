@@ -754,25 +754,25 @@ body {
     grid-column: 3;
     grid-row-end: span 2; }
   .works__item_first {
-    background: url("/img/1_work.jpg");
+    background: url("../img/1_work.jpg");
     background-position: bottom; }
   .works__item_second {
-    background: url("/img/2_work.jpg");
+    background: url("../img/2_work.jpg");
     background-position: 0 100%; }
   .works__third {
-    background: url("/img/3_work.jpg");
+    background: url("../img/3_work.jpg");
     background-position: 50%; }
   .works__item_fourth {
-    background: url("/img/4_work.jpg");
+    background: url("../img/4_work.jpg");
     background-position: 50%; }
   .works__item_fifth {
-    background: url("/img/5_work.jpg");
+    background: url("../img/5_work.jpg");
     background-position: 50%; }
   .works__item_sixth {
-    background: url("/img/6_work.jpg");
+    background: url("../img/6_work.jpg");
     background-position: 50%; }
   .works__item_seventh {
-    background: url("/img/7_work.jpg");
+    background: url("../img/7_work.jpg");
     background-position: 50%; }
   .works__item-overlay {
     display: -webkit-box;
