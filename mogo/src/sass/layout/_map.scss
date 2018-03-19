@@ -1,0 +1,30 @@
+.map {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../img/bg-map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  &__title {
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: $font-title;
+    color: rgb(243, 129, 129);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      border-bottom: 3px solid #f38181;
+      margin: 20px auto 0;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// Medium devices (tablets, 425px and up)
+@media (max-width: 426px) {
+  .design {
+    &__mobile {
+      position: absolute;
+      bottom: -14%;
+      left: 48%;
+      max-width: 165px;
+    }
+  }
+  .quote {
+    &__icon,
+    &__img {
+      display: none;
+    }
+  }
+  .social {
+    &__menu {
+      margin-left: 0;
+    }
+    &__item {
+      margin-right: 5px;
+    }
+  }
+  .email-form {
+    &__submit {
+      padding: 11px;
+    }
+  }
+  .ins {
+    &__img {
+      max-width: 32%;
+    }
+  }
+}

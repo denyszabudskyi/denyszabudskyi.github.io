@@ -1,0 +1,59 @@
+.quote {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  &_dark {
+    background: #f8f8f8;
+  }
+  &__slide {
+    display: flex;
+    text-align: left;
+    padding: 0 90px;
+  }
+  &__text q {
+    font-size: 24px;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.5;
+  }
+  &__text p {
+    position: relative;
+    font-size: 24px;
+    font-family: $font-subtitle;
+    color: rgb(51, 51, 51);
+    margin-left: 70px;
+  }
+  &__text p::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    right: 100%;
+    margin-right: 10px;
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+  }
+  &__icon {
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    border: 3px solid $light-blue;
+    margin-right: 60px;
+  }
+  &__img {
+    height: 210px;
+    width: 210px;
+    margin-right: 20px;
+  }
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__prev {
+    left: 0;
+  }
+  &__next {
+    right: 0;
+  }
+}

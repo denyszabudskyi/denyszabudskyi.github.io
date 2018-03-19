@@ -1,0 +1,55 @@
+.clients {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url("../img/bg-clients.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 110px;
+
+  &-element {
+    width: 44%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 72px;
+    &__avatar {
+      height: 110px;
+      width: 110px;
+    }
+    &__text {
+      margin-left: 30px;
+      text-align: left;
+    }
+    &__title {
+      margin: 0;
+      font-size: 14px;
+      font-family: $font-title;
+      font-weight: 700;
+      color: rgb(51, 51, 51);
+    }
+    &__subtitle {
+      margin-top: 15px;
+      display: block;
+      font-size: 15px;
+      font-family: $font-stack;
+      color: rgb(51, 51, 51);
+      font-style: italic;
+      font-weight: normal;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 60px;
+        border-bottom: 3px solid #f38181;
+        margin: 20px 0;
+      }
+    }
+    &__paragraph {
+      font-size: 15px;
+      color: rgb(153, 153, 153);
+      line-height: 1.6;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Base import
+
+@import "normalize";
+
+// Arguments
+
+@import "variables";
+@import "common";
+
+// Styles import
+@import "layout/_header.scss";
+@import "layout/_story";
+@import "layout/_counting";
+@import "layout/_instruments";
+@import "layout/_design";
+@import "layout/_service";
+@import "layout/_quote";
+@import "layout/_team";
+@import "layout/_works.scss";
+@import "layout/_logos.scss";
+@import "layout/_clients.scss";
+@import "layout/_blog.scss";
+@import "layout/_map.scss";
+@import "layout/_footer.scss";
+@import "layout/breakpoints/768";
+@import "layout/breakpoints/425";

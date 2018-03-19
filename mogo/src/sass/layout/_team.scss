@@ -1,0 +1,64 @@
+.team {
+  padding: 100px 0 190px;
+}
+.gallery {
+  &__overlay {
+    position: relative;
+  }
+  &__element {
+    position: relative;
+  }
+  &__btext {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+  }
+  &__title {
+    font-size: 14px;
+    font-family: $font-title;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__subtitle {
+    margin-top: 17px;
+    display: block;
+    font-size: 15px;
+    text-transform: none;
+    font-weight: 400;
+    font-family: $font-stack;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    text-align: center;
+  }
+  &__menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: #fce38a;
+    border-left: 1px solid #f9bd87;
+    fill: #f38181;
+    transition: all .5s ease-in-out;
+  }
+  .gallery__overlay:hover &__menu {
+    display: flex;
+  }
+  &__link:hover {
+    background: #f38181;
+    fill: white;
+  }
+}

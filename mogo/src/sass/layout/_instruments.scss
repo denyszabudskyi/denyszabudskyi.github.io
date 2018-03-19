@@ -1,0 +1,35 @@
+.instruments {
+  padding : 110px 0 120px;
+  
+
+  &__item {
+    width: 33.3%;
+    padding-right: 43px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding-bottom: 52px;
+  }
+
+  &__content {
+    margin-left: 30px;
+    text-align: left;
+  }
+  &__title {
+    margin: 0;
+    font-family: $font-title;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+  &__paragraph {
+    margin: 0;
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+  }
+  &__item_line {
+    border-bottom: 1px solid rgb(229, 229, 229);
+  }
+}

@@ -1,0 +1,21 @@
+.design {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url("../img/bg_design.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 110px;
+  margin-bottom: 100px;
+  &__devices {
+    position: relative;
+    text-align: center;
+  }
+  &__mobile {
+    position: absolute;
+    bottom: -14%;
+    left: 58%;
+  }
+}

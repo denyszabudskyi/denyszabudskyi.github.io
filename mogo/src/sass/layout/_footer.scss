@@ -1,0 +1,140 @@
+.footer {
+  padding-top: 75;
+  padding-bottom: 70px;
+  background: rgb(248, 248, 248);
+  border-bottom: 1px solid rgb(229, 229, 229);
+
+  &-box {
+    text-align: left;
+    margin-bottom: 10px;
+
+    &:first-child {
+      max-width: 39%;
+    }
+    &:nth-child(2) {
+      max-width: 29%;
+    }
+    &:last-child {
+      max-width: 24%;
+    }
+  }
+  &__logo {
+    display: block;
+    font-size: 46px;
+    font-family: $font-title;
+    color: rgb(204, 204, 204);
+    font-weight: bold;
+    margin-bottom: 44px;
+  }
+  &__paragraph {
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    margin-bottom: 50px;
+  }
+  &__btext {
+    display: block;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-family: $font-title;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(229, 229, 229);
+  }
+}
+.social {
+  margin-bottom: 40px;
+  &__title {
+    font-size: 15px;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+  }
+  &__menu {
+    display: inline-block;
+    margin-left: 23px;
+    padding: 0;
+  }
+  &__item {
+    margin-right: 20px;
+    display: inline-block;
+  }
+}
+.email-form {
+  max-width: 379px;
+  position: relative;
+
+  &__input {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    width: 228px;
+  }
+  &__submit {
+    cursor: pointer;
+    border: 1px solid #95e1d3;
+    padding: 11px 35px;
+    font-size: 14px;
+    font-family: $font-title;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #95e1d3;
+    position: absolute;
+    top: 0;
+    right: 1px;
+  }
+}
+.blogs {
+  font-family: $font-title;
+  &__title {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  &__img {
+    margin-right: 15px;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+  }
+  &__paragraph {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  &__calendar {
+    display: block;
+    font-size: 13px;
+    color: rgb(153, 153, 153);
+    font-style: italic;
+  }
+}
+.ins {
+  &__title {
+    font-size: 14px;
+    font-family: $font-title;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  &__img-group {
+    margin-bottom: 48px;
+  }
+  &__img {
+    display: inline-block;
+  }
+  &__link {
+    font-size: 13px;
+    color: rgb(51, 51, 51);
+    font-style: italic;
+  }
+}
