@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
     <title>Mw</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,16 +20,25 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="top-header">
-                <div class="logo"><a href="#">Mw</a></div>
+                <div class="logo">
+                    <a href="#">Mw</a>
+                </div>
                 <nav class="menu">
                     <ul>
-                        <li class="menu-item"><a class="menu-link" href="#">The Products</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Services</a></li>
-                        <li class="menu-item"><a class="menu-link" href="#">Contact me</a></li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">The Products</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Services</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-link" href="#">Contact me</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -44,7 +52,12 @@
     <section class="mainly">
         <div class="container">
             <h2>There are only 3 colors, 10 digits</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.</p>
             <div class="colors">
                 <span class="cl orange"></span>
                 <span class="cl black-red"></span>
@@ -56,24 +69,52 @@
     </section>
     <section class="info-cards">
         <div class="card black">
-            <h3><img src="img/statistica-up.png" alt="">SEO Optimized</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+            <div class="card__title">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="34px">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M25.846,25.500 L3.230,25.500 C2.041,25.500 1.077,24.548 1.077,23.375 L1.077,7.437 C1.077,6.264 2.041,5.312 3.230,5.312 L25.846,5.312 C27.035,5.312 28.000,6.264 28.000,7.437 L28.000,23.375 C28.000,24.548 27.035,25.500 25.846,25.500 ZM18.854,10.270 L21.225,12.610 L15.476,18.282 L12.195,15.046 L12.369,14.875 L10.846,13.372 L3.230,20.885 L4.754,22.388 L10.672,16.548 L15.514,21.325 L17.037,19.823 L16.999,19.785 L22.748,14.113 L24.910,16.245 L25.689,9.501 L18.854,10.270 ZM10.769,2.125 L12.923,2.125 L12.923,1.062 C12.923,0.475 13.405,-0.000 14.000,-0.000 C14.595,-0.000 15.077,0.475 15.077,1.062 L15.077,2.125 L17.230,2.125 L17.230,4.250 L10.769,4.250 L10.769,2.125 ZM26.923,26.562 C27.518,26.562 28.000,27.038 28.000,27.625 C28.000,28.212 27.518,28.687 26.923,28.687 L19.384,28.687 L21.538,34.000 L18.307,34.000 L16.154,28.687 L11.846,28.687 L9.692,34.000 L6.461,34.000 L8.615,28.687 L1.077,28.687 C0.482,28.687 -0.000,28.212 -0.000,27.625 C-0.000,27.038 0.482,26.562 1.077,26.562 L26.923,26.562 Z"
+                    />
+                </svg>
+                <h3>SEO Optimized</h3>
+            </div>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make.</p>
             <a href="#" class="plus">+</a>
         </div>
         <div class="card black-red">
-            <h3><img src="img/Ipad.png" alt="">Responsive</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+            <div class="card__title">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="36px">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M33.750,36.000 L6.750,36.000 C5.507,36.000 4.500,34.992 4.500,33.750 L4.500,13.500 C4.500,12.257 5.507,11.250 6.750,11.250 L33.750,11.250 C34.992,11.250 36.000,12.257 36.000,13.500 L36.000,33.750 C36.000,34.992 34.992,36.000 33.750,36.000 ZM6.750,22.500 C6.128,22.500 5.625,23.003 5.625,23.625 C5.625,24.246 6.128,24.750 6.750,24.750 C7.371,24.750 7.875,24.246 7.875,23.625 C7.875,23.003 7.371,22.500 6.750,22.500 ZM32.625,14.625 L9.000,14.625 L9.000,32.625 L32.625,32.625 L32.625,14.625 ZM21.375,3.375 L3.375,3.375 L3.375,10.125 L3.375,27.000 L3.375,31.500 L2.250,31.500 C1.007,31.500 -0.000,30.492 -0.000,29.250 L-0.000,2.250 C-0.000,1.007 1.007,-0.000 2.250,-0.000 L22.500,-0.000 C23.742,-0.000 24.750,1.007 24.750,2.250 L24.750,10.125 L21.375,10.125 L21.375,3.375 Z"
+                    />
+                </svg>
+                <h3>Responsive</h3>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make.</p>
             <a href="#" class="plus">+</a>
         </div>
         <div class="card black-green">
-            <h3><img src="img/Ipad.png" alt="">Responsive</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make.</p>
+            <div class="card__title">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="27px">
+                    <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M30.469,26.915 L30.469,27.000 L7.312,27.000 C3.274,27.000 -0.000,23.703 -0.000,19.636 C-0.000,15.986 2.639,12.965 6.099,12.382 C6.099,12.345 6.094,12.309 6.094,12.272 C6.094,5.494 11.550,-0.000 18.281,-0.000 C23.282,-0.000 27.574,3.035 29.453,7.374 C34.743,7.483 39.000,11.828 39.000,17.182 C39.000,22.187 35.277,26.310 30.469,26.915 ZM19.500,8.591 L13.406,14.727 L17.062,14.727 L17.062,23.318 L21.937,23.318 L21.937,14.727 L25.594,14.727 L19.500,8.591 Z"
+                    />
+                </svg>
+                <h3>Responsive</h3>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                to make.</p>
             <a href="#" class="plus">+</a>
         </div>
     </section>
     <section class="info-dwn">
         <div class="container">
-            <h2>Music is all of a sudden much <br>more <span>colorful.</span></h2>
+            <h2>Music is all of a sudden much
+                <br>more
+                <span>colorful.</span>
+            </h2>
             <a href="#" class="btn dwn">View more</a>
         </div>
     </section>
@@ -83,4 +124,5 @@
     <!-- Google Analytics counter -->
     <!-- /Google Analytics counter -->
 </body>
+
 </html>

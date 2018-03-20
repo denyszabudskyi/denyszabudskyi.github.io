@@ -57,7 +57,8 @@ a {
     text-decoration: none;
 }
 .information-block {
-    font-family: 'OpenSans-Light';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     color: #fff;
     margin-top: 152px;
     width: 269px;
@@ -85,7 +86,8 @@ a {
     margin-left: 5px;
 }
 .mainly {
-    font-family: 'OpenSans-Light';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     margin-top: 88px;
     padding: 0 30px;
 }
@@ -128,7 +130,7 @@ a {
     color: #fff;
     padding: 2% 5%;
 }
-.card h3 {
+.card__title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -137,8 +139,12 @@ a {
     align-items: center;
     font-family: 'Open Sans', sans-serif;
 }
+.card__title h3{
+    margin-left: 20px;
+}
 .card p {
-    font-family: 'OpenSans-Light';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 14px;
     line-height: 24.72px;
 }
@@ -162,13 +168,15 @@ a {
 }
 .info-dwn h2 {
     margin: 0;
-    font-family: 'OpenSans-Light';
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 40px;
     line-height: 53.72px;
     padding: 184px 20px 46px 20px;
 }
 .info-dwn h2 span{
-    font-family: 'OpenSans-Bold',sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 .dwn {
     padding: 12px 25px;
@@ -179,6 +187,7 @@ a {
     margin: 0 auto;
     text-align: center;
     font-family: 'OpenSans-Light', sans-serif;
+    font-weight: 300;
 }
 .footer p {
     margin: 0;
