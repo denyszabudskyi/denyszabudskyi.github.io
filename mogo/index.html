@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animate.css">
 
     <title>MOGO</title>
 </head>
@@ -122,7 +123,7 @@
     </header>
     <!-- STORY ABOUT US -->
     <section class="story container" id="story">
-        <h2 class="section-title">
+        <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
             <span class="section-subtitle">What we do</span>
             Story about us
         </h2>
@@ -194,7 +195,7 @@
     </section>
     <!-- INSTRUMENTS -->
     <section class="instruments container" id="instruments">
-        <h2 class="section-title">
+        <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
             <span class="section-subtitle">We work with</span>
             Amazing Services
         </h2>
@@ -250,19 +251,19 @@
     </section>
     <!-- DESING -->
     <section class="design" id="design">
-        <h2 class="section-title">
+        <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
             <span class="section-subtitle">For all devices</span>
             Unique desing
         </h2>
         <div class="design__devices">
-            <img class="design__tablet" src="./img/ipad.png" alt="ipad">
-            <img class="design__mobile" src="./img/iphone.png" alt="iphone">
+            <img class="design__tablet wow bounceInLeft" data-wow-offset="400" src="./img/ipad.png" alt="ipad">
+            <img class="design__mobile wow bounceInRight" data-wow-offset="300" src="./img/iphone.png" alt="iphone">
         </div>
     </section>
     <!-- SERVICE -->
     <section class="service" id="n-service">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
                 <span class="section-subtitle">Service</span>
                 WHAT WE DO
             </h2>
@@ -358,7 +359,7 @@
     </section>
     <!-- TEAM -->
     <section class="team container" id="team">
-        <h2 class="section-title">
+        <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
             <span class="section-subtitle">Who we are</span>
             MEET OUR ITEMS
         </h2>
@@ -483,7 +484,7 @@
     </section>
     <!-- WORKS -->
     <section class="works" id="n-works">
-        <h2 class="section-title">
+        <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
             <span class="section-subtitle">What we do</span>
             SOME OF OUR WORK
         </h2>
@@ -600,7 +601,7 @@
     <!-- CLIENTS -->
     <section class="clients" id="clients">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
                 <span class="section-subtitle">What we do</span>
                 SOME OF OUR WORK
             </h2>
@@ -658,7 +659,7 @@
     <!-- BLOG -->
     <section class="blog" id="n-blog">
         <div class="container">
-            <h2 class="section-title">
+            <h2 class="section-title wow bounceIn" data-wow-offset="100" data-wow-duration="1s">
                 <span class="section-subtitle">Our stories</span>
                 LATEST BLOG
             </h2>
@@ -888,76 +889,16 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/headhesive.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src = "./js/headhesiveSettings.js"></script>
+    <script src="./js/accordion.js"></script>
     <script type="text/javascript">
-
-        var options = {
-            offset: 1000
-        }
-        var header = new Headhesive('.header-menu__box', options);
-
-        $(document).ready(function () {
-            $("a[href*=\\#n-]").on("click", function (e) {
-                var anchor = $(this);
-                $('html, body').stop().animate({
-                    scrollTop: $(anchor.attr('href')).offset().top
-                }, 777);
-                e.preventDefault();
-                return false;
-            });
-        });
-
-        var counter;
-
-        function next(arr) {
-            var max = arr.length - 1,
-                i = 0;
-            return function () {
-                i = i < max ? i + 1 : 0;
-                return arr[i];
-            };
-        }
-
-        function work() {
-            setTimeout(function () {
-                counter().checked = true;
-                work();
-            }, 5000);
-        }
-
-        window.onload = function () {
-            var els = document.querySelectorAll('.fullscreen-slider>input');
-            counter = next(els);
-            work();
-        };
-    </script>
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            $('.panel-group>.panel-group__content').not(':first-of-type').hide();
-
-
-            $('.panel-group>.panel-group__header').click(function () {
-
-                var findArticle = $(this).next();
-                var findWrapper = $(this).closest('.panel-group');
-
-                if (findArticle.is(':visible')) {
-                    findArticle.slideUp('fast');
-                }
-                else {
-                    findWrapper.find('>.panel-group__content').slideUp('fast');
-                    findArticle.slideDown('fast');
-                }
-            });
-
-        });
+        new WOW().init();
     </script>
 </body>
-
 </html>
