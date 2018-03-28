@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="краткое описание">
-    <meta name="keywords" content="разные, ключевые, слова">
-    <link rel="shortcut icon" href="#" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -29,10 +28,11 @@
                 <button class="button button--gp">Log in with Google +</button>
             </div>
             <div class="col-1-of-2">
-                <form action="#">
-                    <div class="form-field  form-field--error">
+                <div id="js-greeting"></div>
+                <form action="#" id="js-form">
+                    <div class="form-field">
                         <label for="login">Login</label>
-                        <input type="email" name="login" id="login">
+                        <input type="text" name="login" id="login">
                     </div>
                     <div class="form-field">
                         <label for="password">Password</label>
@@ -47,7 +47,7 @@
 
                     </div>
                     <div class="form-field">
-                        <button class="button">Log in</button>
+                        <button class="button" onclick="authorization()">Log in</button>
                         <a href="#">Need help logging in?</a>
                     </div>
                 </form>
@@ -60,5 +60,31 @@
     </div>
 
 </body>
+<script>
+    // console.log(localStorage.getItem('myKey'));
+
+    var username = localStorage.getItem('myKey');
+    if (username == 'admin') {
+        document.getElementById('js-form').style.display = 'none';
+        document.getElementById('js-greeting').innerHTML = 'Hello ' + username;
+
+    }
+
+    function authorization() {
+        var login = document.getElementById('login').value;
+        var password = document.getElementById('password').value;
+        if (login == 'admin' && password == '1111') {
+            localStorage.setItem('myKey', login);
+            window.location.reload();
+        } else {
+            window.location.reload();
+        }
+    }
+
+    function authorizationClose() {
+        localStorage.clear('myKey');
+        window.location.reload();
+    }
+</script>
 
 </html>
