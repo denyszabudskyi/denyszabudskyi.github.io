@@ -29,6 +29,7 @@
             </div>
             <div class="col-1-of-2">
                 <div id="js-greeting"></div>
+                <button id="js-greeting__close" onclick="authorizationClose()">close</button>
                 <form action="#" id="js-form">
                     <div class="form-field">
                         <label for="login">Login</label>
@@ -67,7 +68,7 @@
     if (username == 'admin') {
         document.getElementById('js-form').style.display = 'none';
         document.getElementById('js-greeting').innerHTML = 'Hello ' + username;
-
+        document.getElementById('js-greeting__close').style.display = 'block';
     }
 
     function authorization() {
