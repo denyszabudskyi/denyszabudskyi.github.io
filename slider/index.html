@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="slider">
+        <button class="slider__button" type="button" onclick="back();">
+            <div class="slider__block slider__block_l">
+                <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="8px" height="15px">
+                <path fill-rule="evenodd"  
+                    d="M7.991,13.046 L4.519,14.991 L0.172,7.682 L0.009,7.591 L0.063,7.500 L0.009,7.409 L0.172,7.318 L4.519,0.009 L7.991,1.954 L4.692,7.500 L7.991,13.046 Z"/>
+                </svg>
+            <span class="slider__tbutton">назад</span> 
+           </div>
+        </button>
+        <div id="slider__elements"></div>
+        <button class="slider__button" type="button" onclick="next();">
+            <div class="slider__block slider__block_r">
+                <span class="slider__tbutton">далі</span><svg 
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="8px" height="15px">
+            <path fill-rule="evenodd"  
+                d="M7.937,7.500 L7.991,7.591 L7.828,7.682 L3.481,14.991 L0.009,13.046 L3.308,7.500 L0.009,1.954 L3.481,0.009 L7.828,7.318 L7.991,7.409 L7.937,7.500 Z"/>
+            </svg>
+            </div>
+        </button>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
