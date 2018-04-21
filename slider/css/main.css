@@ -152,6 +152,7 @@
     #slider__elements{
         flex-direction: column;
         width: auto;
+        height: 400px;
     }
 
     .slider__tbutton{
