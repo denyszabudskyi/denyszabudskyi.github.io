@@ -22,9 +22,11 @@ function slideTo(direction) {
 
     if (d == 'next') {
         items.insertBefore(generateItem(), items.firstChild);
-        // items.removeChild(items.childNodes[items.length - 1]);
-    } else if (d == 'back') {
-        items.appendChild(generateItem());
+        items.removeChild(items.lastChild);
+
+    } else {
+        items.appendChild(generateItem())
+        items.removeChild(items.firstChild);
     }
 }
 
