@@ -1,0 +1,26 @@
+.form-registration{
+    padding: 20px 0;
+    background: #e85754;
+    width: 600px;
+    margin: 20px auto;
+
+    &__title{
+        color:white;
+        text-align: center;
+    }
+
+    .form-field{
+        display:flex;
+        justify-content: space-between;
+        margin: 10px auto;
+        width: 400px;
+    }
+
+    button{
+        margin: 0 auto;
+        display: block;
+    }
+    .field-error{
+        background: red;
+    }
+}
