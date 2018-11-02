@@ -405,26 +405,95 @@ a {
   text-decoration: none; }
 
 .form-registration {
-  padding: 20px 0;
-  background: #e85754;
-  width: 600px;
-  margin: 20px auto; }
+  padding: 20px 50px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif; }
+  .form-registration .field {
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 5px; }
   .form-registration__title {
-    color: white;
-    text-align: center; }
+    text-align: center;
+    font-size: 28px; }
+  .form-registration .checkbox__title {
+    margin: 0;
+    margin-bottom: 10px; }
   .form-registration .form-field {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 10px auto;
-    width: 400px; }
+    margin: 10px auto; }
+    .form-registration .form-field .field-error_messege {
+      width: 100%;
+      height: 20px;
+      display: block;
+      margin-top: 4px;
+      background: rgba(255, 0, 0, 0.1);
+      font-size: 12px;
+      padding: 3px 5px; }
   .form-registration button {
-    margin: 0 auto;
-    display: block; }
+    display: block;
+    background: #FFEB3B;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100%;
+    height: 40px;
+    border: none; }
+    .form-registration button:hover {
+      background: #f3da05; }
   .form-registration .field-error {
-    background: red; }
+    border-color: rgba(255, 0, 0, 0.1); }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.54); }
+
+.modal-content {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  background-color: #99d651;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  color: white; }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */

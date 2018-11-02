@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <script src="js/main.js"></script>
 </head>
@@ -14,51 +14,64 @@
     <div class="form-registration">
         <div class="container">
             <h1 class="form-registration__title">Реєстрація</h1>
-            <form id="form-registration" action="/register.html" accept-charset="UTF-8" method="POST" novalidate="novalidate">
+            <form id="form-registration" action="/" accept-charset="UTF-8" method="POST" novalidate="novalidate">
                 <div class="form-field">
-                    <label for="firstName">Введите имя : </label>
-                    <input type="text" name="" id="firstName" placeholder="Имя">
+                    <label for="firstName">Введіть ім'я : </label>
+                    <input class="field" type="text" name="" id="firstName" placeholder="">
                 </div>
                 <div class="form-field">
-                    <label for="lastName">Введите фамилию : </label>
-                    <input type="text" name="" id="lastName" placeholder="Фамилия">
+                    <label for="lastName">Введіть прізвище : </label>
+                    <input class="field" type="text" name="" id="lastName" placeholder="">
                 </div>
                 <div class="form-field">
-                    <label for="date">Введите дату рождения : </label>
-                    <input type="date" id="date" />
+                    <label for="date">Введіть дату народження : </label>
+                    <input class="field" type="date" id="date"  />
                 </div>
                 <div class="form-field">
-                    <div class="box">
-                        <input name="male" type="radio" value="men"> Мужчина
-                        <input name="female" type="radio" value="women"> Женщина
+                    <div id="checkbox">
+                        <p class="checkbox__title">Виберіть стать </p>
+                        <input name="sex" type="radio" value="male">
+                        <span class="checkbox__lable">Чоловік</span>
+                        <input name="sex" type="radio" value="famel">
+                        <span class="checkbox__lable">Жінка</span>
                     </div>
                 </div>
                 <div class="form-field">
-                    <label for="country">Введите страну : </label>
+                    <label for="country">Виберіть країну проживання : </label>
                     <select id="country">
-                        <option selected value="UA">Украина</option>
-                        <option value="RU">Россия</option>
-                        <option value="EN">Англия</option>
+                        <option value="UA">Україна</option>
+                        <option value="RU">Росія</option>
+                        <option value="EN">Англія</option>
                     </select>
                 </div>
                 <div class="form-field">
-                    <label for="email">Введите электронный адресс : </label>
-                    <input type="email" id="email" placeholder="Email">
+                    <label for="email">Введіть електонну адресу : </label>
+                    <input class="field" type="email" id="email" placeholder="">
                 </div>
                 <div class="form-field">
-                    <label for="password">Введите электронный адресс : </label>
-                    <input type="password" id="password" placeholder="*****">
+                    <label for="password">Введіть пароль : </label>
+                    <input class="field" type="password" id="password" placeholder="">
                 </div>
                 <div class="form-field">
-                    <label for="adress">Введите адресс : </label>
-                    <input type="text" id="adress" placeholder="Адресс">
+                    <label for="adress">Введіть адресу проживання : </label>
+                    <input class="field" type="text" id="adress" placeholder="">
                 </div>
                 <div class="form-field">
-                    <label for="notes">Введите примечания : </label>
-                    <textarea id="notes" rows="10" cols="45" name="text"></textarea>
+                    <label for="notes">Введіть примітки ( за необхідністтю ) : </label>
+                    <textarea id="notes" rows="5" cols="45" name="text"></textarea>
                 </div>
-                <button disabled>Отпраить</button>
+                <button id="myBtn">Відправити</button>
             </form>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">×</span>
+            <p>Дані успішно відправлені</p>
         </div>
 
     </div>
