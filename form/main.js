@@ -11,7 +11,7 @@ function isEmpty(element) {
     }
     // В полі заборонені символи, запускаємо функцію створення повідомлення.
     else if ((((element.value).search('"')) != -1) || (((element.value).search("'")) != -1)) {
-        contentMessege = "Помилка! ( Присутні заборонені симлоли - 'лапки' )";
+        contentMessege = "Помилка! ( Присутні заборонені символи )";
         createMessege(element, contentMessege);
 
     }
@@ -67,7 +67,7 @@ function isEmail(element) {
     }
     // В полі заборонені символи, запускаємо функцію створення повідомлення.
     else if ((((element.value).search('"')) != -1) || (((element.value).search("'")) != -1)) {
-        contentMessege = "Помилка! ( Присутні заборонені симлоли - 'лапки' )";
+        contentMessege = "Помилка! ( Присутні заборонені символи )";
         createMessege(element, contentMessege);
 
     }
