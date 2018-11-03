@@ -2,6 +2,7 @@
 
 // Ця функція виконує провірку на пустоту або на введення різного виду лапок.
 function isEmpty(element) {
+   
     var contentMessege = " ";
     if (!element.value.replace(/[\s]+/g, '')) {
         // Поле пусте, запускаємо функцію створення повідомлення.
@@ -10,11 +11,15 @@ function isEmpty(element) {
     }
     // В полі заборонені символи, запускаємо функцію створення повідомлення.
     else if ((((element.value).search('"')) != -1) || (((element.value).search("'")) != -1)) {
-        contentMessege = "Помилка! ( Присутній заборонені симлоли )";
+        contentMessege = "Помилка! ( Присутні заборонені симлоли - 'лапки' )";
         createMessege(element, contentMessege);
 
     }
     // Помилок не виявлено, запускаємо функцію на видалення повідомлення про помилку якщо воно присутнє.
+    else if(element.value.length < 3){
+        contentMessege = "Помилка! ( Дані менше трьох символів )";
+        createMessege(element, contentMessege);
+    }
     else {
         removeMessege(element);
     }
@@ -62,7 +67,7 @@ function isEmail(element) {
     }
     // В полі заборонені символи, запускаємо функцію створення повідомлення.
     else if ((((element.value).search('"')) != -1) || (((element.value).search("'")) != -1)) {
-        contentMessege = "Помилка! ( Присутній заборонені симлоли )";
+        contentMessege = "Помилка! ( Присутні заборонені симлоли - 'лапки' )";
         createMessege(element, contentMessege);
 
     }
