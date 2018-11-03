@@ -10,14 +10,33 @@
       text-align: center;
       font-size: 28px;
     }
+
+    label {
+      font-size: 14px;
+      @media (max-width: 425px) {
+        font-size: 12px;
+      }
+      margin: 5px 0;
+    }
     &__messege {
       width: 100%;
-      height: 20px;
-      display: block;
+      height: 40px;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       margin-top: 4px;
       background: rgba(255, 0, 0, 0.1);
       font-size: 12px;
-      padding: 3px 5px;
+    }
+
+    .form-registration-checkbox{
+      &__title{
+        font-size: 14px;
+        @media (max-width: 425px) {
+          font-size: 12px;
+        }
+      }
     }
     .form-registration-item {
       position: relative;
@@ -37,17 +56,21 @@
         border-color: rgba(255, 0, 0, 0.1);
       }
     }
+    input[type="radio"] {
+      height: 15px;
+    }
 
     &__btn {
       display: block;
-      background: #FFEB3B;
+      background: #6d6d6d;
       transition: 0.5s;
       width: 100%;
       height: 40px;
       border: none;
+      color: white;
   
       &:hover{
-        background: rgb(243, 218, 5);
+        background: #6f6f6fd4;
       }
     }
   }
