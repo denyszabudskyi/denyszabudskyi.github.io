@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="form-registration">
+        <div class="container">
+            <h1 class="form-registration__title">Реєстрація</h1>
+            <form id="form-main" action="/" accept-charset="UTF-8" method="GET" novalidate="novalidate">
+                <div class="form-registration-item">
+                    <label for="firstName">Введіть ім'я * : </label>
+                    <input class="form-registration__field" type="text" name="name" id="firstName">
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="lastName">Введіть прізвище * : </label>
+                    <input class="form-registration__field" type="text" name="surname" id="lastName">
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="date">Введіть дату народження * : </label>
+                    <input class="form-registration__field" type="date" name="date" id="date" />
+                </div>
+
+                <div class="form-registration-item">
+                    <div class="form-registration-checkbox">
+                        <p class="form-registration-checkbox__title">Виберіть стать * :</p>
+                        <input type="radio" name="sex" value="male">
+                        <span class="form-registration-checkbox__lable">Чоловік</span>
+                        <input type="radio" name="sex" value="famel">
+                        <span class="form-registration-checkbox__lable">Жінка</span>
+                    </div>
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="country">Виберіть країну проживання * : </label>
+                    <select id="country">
+                        <option value="default">-- Виберіть --</option>
+                        <option value="UA">Україна</option>
+                        <option value="RU">Росія</option>
+                        <option value="EN">Англія</option>
+                    </select>
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="email">Введіть електонну адресу * : </label>
+                    <input class="form-registration__field" type="email" id="email" name="email">
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="password">Введіть пароль * : </label>
+                    <input class="form-registration__field" type="password" id="password" name="password">
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="adress">Введіть адресу проживання * : </label>
+                    <input class="form-registration__field" type="text" id="adress" name="adress">
+                </div>
+
+                <div class="form-registration-item">
+                    <label for="notes">Введіть примітки ( за необхідністтю ) : </label>
+                    <textarea id="notes" rows="5" cols="45" name="notes"></textarea>
+                </div>
+
+                <button class="form-registration__btn" type="submit">Відправити</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="Modal" class="modal-box">
+        <div class="modal-content">
+            <span class="close" id="Close">×</span>
+            <p>Дані успішно відправлені</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
